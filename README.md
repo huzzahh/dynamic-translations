@@ -1,3 +1,6 @@
+# Goal
+The purpose of this repository is to create dynamic translations that can be used for as many languages as you need on your site using i18n for internationalization. All you need is your base file of source language translations. 
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
