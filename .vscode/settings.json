@@ -1,0 +1,69 @@
+{
+    "workbench.colorCustomizations": {
+      "activityBar.activeBorder": "#207f5f",
+      "activityBar.activeBackground": "#d6ad5c",
+      "activityBar.background": "#d6ad5c",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#207f5f",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#15202b99",
+      "sash.hoverBorder": "#d6ad5c",
+      "statusBar.background": "#cc9933",
+      "statusBar.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#a37a29",
+      "statusBarItem.remoteBackground": "#cc9933",
+      "statusBarItem.remoteForeground": "#15202b",
+      "titleBar.activeBackground": "#cc9933",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveBackground": "#cc993399",
+      "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#cc9933",
+    "cSpell.words": [
+      "davinci",
+      "gridjs",
+      "Lalezar",
+      "listhen",
+      "nuxi",
+      "nuxt",
+      "Nuxt",
+      "NUXT",
+      "nuxtjs",
+      "openai",
+      "pinia",
+      "SAMEORIGIN",
+      "samwise",
+      "SAMWISE",
+      "tailwindcss",
+      "toastification",
+      "unjs",
+      "vueuse"
+    ],
+    "files.exclude": {
+      "node_modules/**": true
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "nuxt.isNuxtApp": false
+  }
+  
