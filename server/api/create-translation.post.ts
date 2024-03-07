@@ -1,8 +1,11 @@
 import fs from "fs";
 import lang from "../../internationalization/pt-BR.json";
 import { $openai } from "~/utils/openai";
+import { createStorage } from "unstorage";
 
 export default defineEventHandler(async (event) => {
+  const storage = createStorage();
+
   const { message } = await readBody(event);
   const data = await $openai.chat.completions.create({
     model: "gpt-3.5-turbo-16k",
@@ -34,9 +37,15 @@ export default defineEventHandler(async (event) => {
   });
 
   const dataTranslated = data.choices[0].message.content;
-  if (dataTranslated) {
-    fs.writeFileSync("internationalization/global.json", dataTranslated);
-    console.log("File has been written");
-    return JSON.parse(dataTranslated);
+  if (!dataTranslated) {
+    throw createError({
+      statusCode: 422,
+      message: "Could not parse response from OpenAI.",
+    });
   }
+
+  fs.writeFileSync("internationalization/global.json", dataTranslated);
+  await storage.setItem("tranlations", dataTranslated);
+  // console.log(await storage.getItem("tranlations"));
+  return JSON.parse(dataTranslated) as Record<string, any>;
 });

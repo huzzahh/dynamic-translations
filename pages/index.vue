@@ -2,7 +2,7 @@
   <div>
     <h1>{{ $t("Filmes") }}</h1>
     <h1>{{ $t("Series") }}</h1>
-    <select rounded-md text-sm p-1 w-[200px] v-model="select">
+    <select v-model="select">
       <option v-for="loc in locale.lang" :key="loc.lang" :value="loc" p-1>
         {{ loc }}
       </option>
@@ -28,6 +28,6 @@ async function translateContent() {
       message: select.value,
     },
   });
-  window.location.reload();
+  // window.location.reload();
 }
 </script>
